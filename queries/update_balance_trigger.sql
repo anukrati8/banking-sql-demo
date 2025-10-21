@@ -14,7 +14,6 @@ BEGIN
  END;
  $$ LANGUAGE plpgsql; 
 
--- -- Trigger
  CREATE TRIGGER trg_update_balance
  AFTER INSERT ON Transactions
  FOR EACH ROW
